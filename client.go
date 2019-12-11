@@ -24,7 +24,7 @@ func main() {
 
 	fmt.Println("Sending Gophers down the pipe...")
 
-	for i := 1; i <= 5; i++ {
+	for i := 0; i < 5; i++ {
 		// Send the word "GOPHER" to the open connection.
 		_, err = conn.Write([]byte("GOPHER\n"))
 		if err != nil {
